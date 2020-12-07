@@ -16,13 +16,11 @@ class Home extends Component {
 
             <div className="app">
                 
-                <div id="full-size">
-                Your contents go here
-                </div>
-
+              <div id="image-holder"/>
               
-        
-       
+              <div id="profile-photo"></div>
+              <div id="name">Derry Bradley</div>
+              <div id="occupation">Software/Cloud Engineer</div>
             </div>
         
 
