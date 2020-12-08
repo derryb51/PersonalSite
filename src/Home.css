@@ -1,20 +1,9 @@
-body > #root > div {
-  height: 100vh;
-  background-image: url("./assets/Toronto.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-      -webkit-background-size: 100% 100%; /*  Safari  */
-      -khtml-background-size: 100% 100%; /*  Konqueror  */
-      -moz-background-size: 100% 100%; /*  Firefox  */
-  overflow:auto;
-  }
-
 #profile-photo{
     background-image: url("./assets/Me_Two.jpg");
     height: 35vh;
     width:35vh;
     border-radius: 50%;
-    margin-left: 39%;
+    margin-left: 41%;
     margin-top: 20%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +11,7 @@ body > #root > div {
     overflow:auto;
     border: 5px solid ;
     border-color:grey;
-    opacity:.2;
+    opacity:.4;
     transition: 3s;
   }
 
@@ -42,6 +31,7 @@ body > #root > div {
     font-family: "Trebuchet MS", sans-serif;
     letter-spacing: -2px;
     border-bottom: 2px solid black;
+    width:100%;
     text-transform: uppercase;
     
   }
