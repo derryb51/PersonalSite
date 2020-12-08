@@ -1,0 +1,52 @@
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180%;
+  }
+
+  .imglogo {
+    height: 3vh;
+    background-image: url("./assets/ireland.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: flex;
+    overflow:auto;
+    }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 160%;
+  }
+  
+ .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 2%;
+    width: 70%;
+    justify-content: end;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links:hover {
+    background-color: #1888ff;
+    border-radius: 5%;
+    transition: .4s;
+  }
+    
+  
