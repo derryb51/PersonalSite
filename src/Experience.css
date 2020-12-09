@@ -1,0 +1,49 @@
+.bubbles{
+    color: rgb(196, 164, 164);
+    background-color:rgb(26, 37, 73);
+    padding:5%;
+    height: 20vh;
+    width:27vh;
+    border-radius: 50%;
+    letter-spacing: 5px;
+    font-size: 120%;
+    text-align: center;
+    line-height: 200%;
+}
+
+.myList{
+    color: rgb(196, 164, 164);
+    background-color:rgb(26, 37, 73);
+    font-size: 2em;
+    padding:1%;
+    width:20%;
+    position: relative;
+    left: 70%; 
+}
+
+#items { 
+    width:300px; 
+}
+.item { 
+   width:100px; 
+   border:solid 1px #ccc;
+   float:left;
+   height:20px;
+   z-index:0;
+   overflow:hidden;
+   position:relative; 
+}  
+
+.item:hover {
+   overflow:visible;
+}
+
+.item:hover .inner { 
+   z-index: 100;
+}
+
+.inner { 
+   position: absolute;
+   background: white;
+   width: 100%;
+}

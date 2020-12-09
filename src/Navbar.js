@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import About from './About.js';
+import Experience from './Experience.js';
 import Route from 'react-router-dom/Route';
 
 
@@ -57,6 +58,8 @@ function Navbar() {
       
       </nav>
       <Route path ="/about" exact strict component={About}/>
+      
+      <Route path ="/experience" exact strict component={Experience}/>
     </>
   );
 }
