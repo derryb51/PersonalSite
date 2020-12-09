@@ -15,21 +15,16 @@ class Home extends Component {
           () => {
             return (
             <div className="homePage">
-              <Navbar></Navbar>
               <div id="image-holder"/>
-              
               <div id="profile-photo"></div>
               <div id="name">Derry Bradley</div>
               <div id="occupation">Software|Cloud Engineer</div> 
-              <li> <Link className="individual_item" to='/aboutTest'>About</Link></li>
-
-         
-              
-           
-
+              <li> <Link className="individual_item" to='/about'>About</Link></li>
             </div>);
           }
         }/>
+        <Route path ="/about" exact strict component={About}/>
+        
         
             </div>
         
