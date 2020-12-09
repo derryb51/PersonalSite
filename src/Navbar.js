@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import About from './About.js';
+import Route from 'react-router-dom/Route';
+
 
 
 function Navbar() {
@@ -39,8 +42,9 @@ function Navbar() {
           
           <li className='nav-item'>
             <Link to='/about' className='nav-links'onClick={closeMobileMenu}>About</Link>
+            
           </li>
-          
+         
           <li className='nav-item'>
             <Link to='/experience' className='nav-links' onClick={closeMobileMenu}>Experience</Link>
           </li>
@@ -52,6 +56,7 @@ function Navbar() {
         </ul>
       
       </nav>
+      <Route path ="/about" exact strict component={About}/>
     </>
   );
 }

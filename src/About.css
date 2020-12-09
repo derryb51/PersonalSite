@@ -1,5 +1,12 @@
-#about{
-    font-size: 5em;
-    color: green;
-    
+.aboutMe{
+    width:40%;
+    color: rgb(196, 164, 164);
+    font-size:250%;
+    margin-left: 50%;
+    margin-top: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(26, 37, 73);
+    padding: 2%;
 }
+
+
