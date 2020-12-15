@@ -1,49 +1,59 @@
 .bubbles{
-    color: rgb(196, 164, 164);
-    background-color:rgb(26, 37, 73);
-    padding:5%;
-    height: 20vh;
-    width:27vh;
-    border-radius: 50%;
-    letter-spacing: 5px;
-    font-size: 120%;
-    text-align: center;
-    line-height: 200%;
+   position: absolute;
+   color: rgb(196, 164, 164);
+   background-color:rgb(26, 37, 73);
+   height:24%;
+   width:24%;
+   border-radius: 10%;
+   letter-spacing:.3rem;
+   font-size: 180%;
+   text-align: center;
+   line-height: 150%;
+
 }
+
+#textOne{
+   position: relative;
+   top:15%;
+}
+
+#pone{
+   top:12%;
+   left:2%;
+}
+
+#ptwo{
+   top:39%;
+   left:2%;
+}
+
+#pthree{
+   top:66%;
+   left:2%;
+}
+
+#pfour{
+   top:12%;
+   left:40%;
+}
+
+#pfive{
+   left:40%;
+   top:39%;
+}
+
+#psix{
+   left:40%;
+   top:66%;
+}
+
 
 .myList{
-    color: rgb(196, 164, 164);
-    background-color:rgb(26, 37, 73);
-    font-size: 2em;
-    padding:1%;
-    width:20%;
-    position: relative;
-    left: 70%; 
-}
-
-#items { 
-    width:300px; 
-}
-.item { 
-   width:100px; 
-   border:solid 1px #ccc;
-   float:left;
-   height:20px;
-   z-index:0;
-   overflow:hidden;
-   position:relative; 
-}  
-
-.item:hover {
-   overflow:visible;
-}
-
-.item:hover .inner { 
-   z-index: 100;
-}
-
-.inner { 
-   position: absolute;
-   background: white;
-   width: 100%;
+   position: relative;
+   color: rgb(196, 164, 164);
+   background-color:rgb(26, 37, 73);
+   font-size: 2em;
+   padding:1%;
+   width:25%;
+   left: 70%; 
 }
