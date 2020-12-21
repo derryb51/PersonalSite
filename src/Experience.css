@@ -1,0 +1,59 @@
+.bubbles{
+   position: absolute;
+   color: rgb(196, 164, 164);
+   background-color:rgb(26, 37, 73);
+   height:24%;
+   width:24%;
+   border-radius: 10%;
+   letter-spacing:.3rem;
+   font-size: 180%;
+   text-align: center;
+   line-height: 150%;
+
+}
+
+#textOne{
+   position: relative;
+   top:15%;
+}
+
+#pone{
+   top:12%;
+   left:2%;
+}
+
+#ptwo{
+   top:39%;
+   left:2%;
+}
+
+#pthree{
+   top:66%;
+   left:2%;
+}
+
+#pfour{
+   top:12%;
+   left:40%;
+}
+
+#pfive{
+   left:40%;
+   top:39%;
+}
+
+#psix{
+   left:40%;
+   top:66%;
+}
+
+
+.myList{
+   position: relative;
+   color: rgb(196, 164, 164);
+   background-color:rgb(26, 37, 73);
+   font-size: 2em;
+   padding:1%;
+   width:25%;
+   left: 70%; 
+}
