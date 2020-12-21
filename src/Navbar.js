@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import About from './About.js';
 import Experience from './Experience.js';
+import Contact from './Contact.js';
 import Route from 'react-router-dom/Route';
 
 
@@ -60,6 +61,8 @@ function Navbar() {
       <Route path ="/about" exact strict component={About}/>
       
       <Route path ="/experience" exact strict component={Experience}/>
+
+      <Route path ="/contact" exact strict component={Contact}/>
     </>
   );
 }

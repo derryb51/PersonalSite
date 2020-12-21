@@ -1,5 +1,5 @@
 .bubbles{
-   position: absolute;
+   position: fixed;
    color: rgb(196, 164, 164);
    background-color:rgb(26, 37, 73);
    height:24%;
@@ -48,12 +48,14 @@
 }
 
 
-.myList{
+#myList{
    position: relative;
    color: rgb(196, 164, 164);
    background-color:rgb(26, 37, 73);
    font-size: 2em;
+   top:50px;
    padding:1%;
    width:25%;
    left: 70%; 
 }
+
