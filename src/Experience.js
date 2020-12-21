@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import './Experience.css';
+import $ from 'jquery';
 
 
 class Experience extends Component {
@@ -21,7 +22,7 @@ class Experience extends Component {
   handleClick(event){
     const id = event.currentTarget.id;
     if(id=="pone")
-    this.setState(this.toggleClickState);
+    this.setState(this.toggleClickState);  
 
     if(id=="ptwo")
     this.setState(this.toggleClickStateTwo);
@@ -38,7 +39,7 @@ class Experience extends Component {
     if(id=="psix")
     this.setState(this.toggleClickStateSix);
   }
-
+  
   toggleClickState(state) {
     return {
       isClicked: !state.isClicked,
@@ -74,22 +75,25 @@ class Experience extends Component {
       isClickedSix: !state.isClickedSix,
     };
   }
+
+ 
+
     render() {
 
         return (
            <div className="app">
 
-             <div id="message"> Click the Job Title to find out more</div>
-             <div id="certs"> Licenses & certifications</div>
+             
 
               
             <div className="bubbles" id="pone"
-            onClick={this.handleClick}>
+            onClick={this.handleClick}
+            onMouseLeave={this.museLeave}>
             <p id="textOne">Software|Cloud Engineer <br/><br/>Fidelity Investments<br/><br/> August 2020 - Present</p>
             </div>
                                 {
                                   this.state.isClicked && 
-                                  <div className="myList"> 
+                                  <div id="myList"> 
                                   I am currently participating in Fidelity Investments Leap Software Engineering Track.
                                   <br/>Training in this track includes: 
                                   <ul>
@@ -109,7 +113,10 @@ class Experience extends Component {
                                       <li id="item">Kubernetes</li>
                                       <li id="item">AWS</li>
                                   </ul>
+
+                                  <b>TAP AGAIN TO CLOSE</b>
                               </div>
+                             
                               }
 
             <div className="bubbles" id="ptwo"
@@ -118,7 +125,7 @@ class Experience extends Component {
             </div>
                       {
                           this.state.isClickedTwo &&
-                          <div className="myList"> 
+                          <div id="myList"> 
                               <ul>
                                   <li id="item">Day-to-day admin and maintenance systems support for software, hardware and servers</li>
                                   <li id="item">Install, configure, test and maintain operating systems, application software and system management tools</li>
@@ -132,7 +139,8 @@ class Experience extends Component {
                                     </ul>
                                   </li>
                                   <li id="item">Using Python to interact with the operating system (Linux & Windows)</li>
-                              </ul>      
+                              </ul>  
+                              <b>TAP AGAIN TO CLOSE</b>    
                           </div>
                           }
     
@@ -143,10 +151,11 @@ class Experience extends Component {
 
                         {
                           this.state.isClickedThree &&
-                          <div className="myList"> 
+                          <div id="myList"> 
                               <ul>
                                   <li id="item">Worked as part of a team upgrading a major water reservoir in downtown Toronto</li>
-                              </ul>      
+                              </ul> 
+                              <b>TAP AGAIN TO CLOSE</b>     
                           </div>
                           }
 
@@ -157,11 +166,12 @@ class Experience extends Component {
 
                         {
                           this.state.isClickedFour &&
-                          <div className="myList"> 
+                          <div id="myList"> 
                               <ul>
                                   <li id="item">Conducting extensive research in specific or general project areas</li>
                                   <li id="item">Write and present formal technical reports on project areas</li>
-                              </ul>      
+                              </ul>   
+                              <b>TAP AGAIN TO CLOSE</b>   
                           </div>
                           }
 
@@ -172,10 +182,11 @@ class Experience extends Component {
 
                         {
                           this.state.isClickedFive &&
-                          <div className="myList"> 
+                          <div id="myList"> 
                               <ul>
                                   <li id="item">Identified ways to optimize the software to make it more efficient </li>
-                              </ul>      
+                              </ul>  
+                              <b>TAP AGAIN TO CLOSE</b>    
                           </div>
                         }
 
@@ -185,11 +196,12 @@ class Experience extends Component {
             </div>
             {
                           this.state.isClickedSix &&
-                          <div className="myList"> 
+                          <div id="myList"> 
                               <ul>
                                   <li id="item">Proactively sought new business opportunities in existing and potential business accounts </li>
                                   <li id="item">Maintained and grew the market share within a specific sales territory </li>
-                              </ul>      
+                              </ul> 
+                              <b>TAP AGAIN TO CLOSE</b>     
                           </div>
                         }
            </div>
