@@ -7,12 +7,15 @@ import { SocialIcon } from 'react-social-icons';
 
 
 class Contact extends Component {
-
+  
     render() {
+     
 
         return (
            <div className="app">
-               
+             
+
+            
                 <ul className="socialLinks">
                     <li>
                         <div className='nav-item'><SocialIcon url="https://github.com/derryb51" bgColor="rgb(26, 37, 73)"
@@ -22,6 +25,7 @@ class Contact extends Component {
                         <div className='nav-item'><SocialIcon url="https://gitlab.com/derryb51" bgColor="rgb(26, 37, 73)" 
                         fgColor="#dddddd" title="Gitlab" style={{ height: 350, width: 350 }} /></div>
                     </li>
+               
                     <li>
                         <div className='nav-item'><SocialIcon url="https://www.linkedin.com/in/derrybradley203/"
                         bgColor="rgb(26, 37, 73)" fgColor="#dddddd" title="LinkedIn" style={{ height: 350, width: 350 }} /></div>
@@ -31,10 +35,13 @@ class Contact extends Component {
                         fgColor="#dddddd" title="Email" style={{ height: 350, width: 350 }} /></div>
                     </li>
                 </ul>
+
+                
+                
               
            </div>
-        );
-    }
+           
+        );    }
 }
 
 export default Contact;

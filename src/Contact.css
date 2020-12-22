@@ -1,12 +1,49 @@
+.app{
+  height: 100vh;
+}
+
 .socialLinks{
-    position: fixed;
-    display: inline-flex;
-    list-style-type: none;
-    grid-gap:12%;
-    left:3%;
-    top:30%;
+  position: relative;
+  display: -webkit-inline-flex;
+  left:10%;
+  top:30%;
+  list-style-type: none;
+  grid-gap:23%;
+ 
+}
+
+.social-icon{
+  height: 25px;
+  width: 25px;
+}
+
+/* END SINGLE CATEGORY PAGE
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+ 
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
 
 }
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+ 
+}
+
+/********* SUPER EXTRA SMALL DEVICES ONLY ******/
+@media (max-width:479px){
+  
+} 
 
 
   /* grid-gap: 8%;
