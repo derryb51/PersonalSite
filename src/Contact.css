@@ -5,17 +5,29 @@
 .socialLinks{
   position: relative;
   display: -webkit-inline-flex;
-  left:10%;
+  left:2.5%;
   top:30%;
   list-style-type: none;
-  grid-gap:23%;
+  grid-gap:5%;
  
 }
 
-.social-icon{
-  height: 25px;
-  width: 25px;
+#socialmedicons{
+  display: flex;
+  align-items: center;
 }
+
+.my-links {
+  color: white;
+  text-decoration: none;
+  padding: 5rem 15rem;
+  background-color: #31649b;
+  border-radius: 5%;
+  transition: .4s;
+  font-size: 1000%;
+}
+
+
 
 /* END SINGLE CATEGORY PAGE
 /********** Large devices only **********/
