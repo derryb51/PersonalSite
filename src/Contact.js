@@ -26,11 +26,11 @@ class Contact extends Component {
                    
                         <ul className="socialLinks">
                             <li id="socialmedicons">
-                                <a href="mailto: derrybradley199611@gmail.com" className='my-links'><FontAwesomeIcon icon="envelope"title="email"  /></a>
+                                <a href="mailto: derrybradley199611@gmail.com" className='my-links'><FontAwesomeIcon icon="envelope"title="Email"  /></a>
                             </li>
                             
                             <li id="socialmedicons">
-                                <a href="https://www.linkedin.com/in/derrybradley203/" className='my-links'><FontAwesomeIcon icon={['fab', 'linkedin']} title="LinkedIn"/></a>
+                                <a href="https://www.linkedin.com/in/derrybradley203/" className='my-links' id="linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} title="LinkedIn"/></a>
                             </li>
                     
                             <li id="socialmedicons">
