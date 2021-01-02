@@ -7,6 +7,8 @@ import Background from './assets/Toronto.jpg';
 import Navbar from './Navbar.js';
 
 class Home extends Component {
+
+  
   render() {
     return (
       <Router>

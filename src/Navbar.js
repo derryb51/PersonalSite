@@ -6,6 +6,8 @@ import About from './About.js';
 import Experience from './Experience.js';
 import Contact from './Contact.js';
 import Route from 'react-router-dom/Route';
+import Dropdown from './Dropdown';
+import { MenuItems } from './MenuItems';
 
 
 
@@ -34,29 +36,56 @@ function Navbar() {
 
   return (
     <>
+
+
+
+
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>IRE <div className="imglogo"></div></Link>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           
-          <li className='nav-item'>
+          <li className='nav-item' id="mainls">
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
           </li>
           
-          <li className='nav-item'>
+          <li className='nav-item' id="mainls">
             <Link to='/about' className='nav-links'onClick={closeMobileMenu}>About</Link>
             
           </li>
          
-          <li className='nav-item'>
+          <li className='nav-item' id="mainls">
             <Link to='/experience' className='nav-links' onClick={closeMobileMenu}>Experience</Link>
           </li>
           
-          <li className='nav-item'>
+          <li className='nav-item' id="mainls">
             <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact Me</Link>
           </li>
-          
-        </ul>
-      
+
+          {/* <li className='nav-item' id="dropdownls" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            <Link className='nav-links' onClick={closeMobileMenu}>Dropdown</Link>
+            {dropdown && <Dropdown />}
+          </li> */}
+
+          {/* <li className='nav-item' onClick={handleClick} 
+          className={'dropdown-menu'}
+          >
+           
+            {MenuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <Link
+                className={item.cName}
+                to={item.path}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
+              </Link>
+            </li>
+          );
+        })}
+           
+          </li> */}
+        </ul> 
       </nav>
       <Route path ="/about" exact strict component={About}/>
       

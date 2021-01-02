@@ -48,5 +48,24 @@
     border-radius: 5%;
     transition: .4s;
   }
-    
+
+ 
   
+
+/********** Extra small devices only **********/
+@media (min-width: 480px) and (max-width: 767px) {
+  .navbar {
+    font-size: 100%;
+      
+    }
+  
+    
+}
+
+/********* SUPER EXTRA SMALL DEVICES ONLY ******/
+@media (min-width: 0px) and (max-width: 479px){
+  .navbar {
+    font-size: 70%;
+      
+    }
+} 
