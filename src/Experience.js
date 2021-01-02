@@ -85,12 +85,12 @@ class Experience extends Component {
 
              
 
-              
-            <div className="bubbles" id="pone"
+            <ul className="mylist">
+            <li className="bubbles" id="pone"
             onClick={this.handleClick}
             onMouseLeave={this.museLeave}>
-            <p id="textOne">Software|Cloud Engineer <br/><br/>Fidelity Investments<br/><br/> August 2020 - Present</p>
-            </div>
+            <p id="textOne">Software Engineer <br/><br/>Fidelity Investments<br/><br/> August 2020 - Present</p>
+            </li>
                                 {
                                   this.state.isClicked && 
                                   <div id="myList"> 
@@ -119,10 +119,10 @@ class Experience extends Component {
                              
                               }
 
-            <div className="bubbles" id="ptwo"
+            <li className="bubbles" id="ptwo"
             onClick={this.handleClick}>
             <p id="textOne">Technical Operations<br/><br/>Sentenial <br/><br/>January 2020 – August 2020</p>
-            </div>
+            </li>
                       {
                           this.state.isClickedTwo &&
                           <div id="myList"> 
@@ -144,10 +144,10 @@ class Experience extends Component {
                           </div>
                           }
     
-            <div className="bubbles" id="pthree"
+            <li className="bubbles" id="pthree"
              onClick={this.handleClick}>
             <p id="textOne">Construction Laborer/Machine Operator<br/><br/>Bennett Mechanical Installations (2001) Ltd<br/><br/> May 2018 – August 2019</p>
-            </div>
+            </li>
 
                         {
                           this.state.isClickedThree &&
@@ -159,10 +159,10 @@ class Experience extends Component {
                           </div>
                           }
 
-            <div className="bubbles" id="pfour"
+            <li className="bubbles" id="pfour"
             onClick={this.handleClick}>
             <p id="textOne">Urban Planning Internship<br/><br/>Tom Phillips & Associates<br/><br/> May 2016 – August 2016</p>
-            </div>
+            </li>
 
                         {
                           this.state.isClickedFour &&
@@ -175,10 +175,10 @@ class Experience extends Component {
                           </div>
                           }
 
-            <div className="bubbles" id="pfive"
+            <li className="bubbles" id="pfive"
              onClick={this.handleClick}>
             <p id="textOne">Internship - Software Testing<br/><br/>Sentenial<br/><br/> June 2015 – August 2015</p>
-            </div>
+            </li>
 
                         {
                           this.state.isClickedFive &&
@@ -190,10 +190,10 @@ class Experience extends Component {
                           </div>
                         }
 
-            <div className="bubbles" id="psix"
+            <li className="bubbles" id="psix"
             onClick={this.handleClick}>
             <p id="textOne">Sales Representative<br/><br/>Astra Marketing <br/><br/> Jan 2015 – May 2015</p>
-            </div>
+            </li>
             {
                           this.state.isClickedSix &&
                           <div id="myList"> 
@@ -204,6 +204,7 @@ class Experience extends Component {
                               <b>TAP AGAIN TO CLOSE</b>     
                           </div>
                         }
+            </ul>
            </div>
         );
     }
