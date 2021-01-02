@@ -1,13 +1,63 @@
 .aboutMe{
-    width:40%;
+    position: relative;
+    right: 15%;
+    width:50%;
     color: rgb(196, 164, 164);
-    font-size:250%;
+    font-size:120%;
     margin-left: 50%;
     margin-top: 5%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:rgb(26, 37, 73);
     padding: 2%;
     border-radius: 5%;
+}
+
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .aboutMe{
+        position: relative;
+        right:15%;
+        width:50%;
+        font-size:120%;
+        
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+    .aboutMe{
+        position: relative;
+        right:25%;
+        width:65%;
+        font-size:120%;
+        
+    }
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 480px) and (max-width: 767px) {
+    .aboutMe{
+        position: relative;
+        right:25%;
+        width:65%;
+        font-size:100%;
+        
+    }
+}
+
+/********* SUPER EXTRA SMALL DEVICES ONLY ******/
+@media (min-width: 0px) and (max-width: 479px){
+
+    .aboutMe{
+        position: relative;
+        right:25%;
+        width:65%;
+        font-size:80%;
+        
+    }
 }
 
 
