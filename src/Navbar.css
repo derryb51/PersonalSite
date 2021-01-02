@@ -63,9 +63,16 @@
 }
 
 /********* SUPER EXTRA SMALL DEVICES ONLY ******/
-@media (min-width: 0px) and (max-width: 479px){
+@media (min-width: 360px) and (max-width: 479px){
   .navbar {
     font-size: 70%;
+      
+    }
+} 
+
+@media (min-width: 0px) and (max-width: 359px){
+  .navbar {
+    font-size: 30%;
       
     }
 } 

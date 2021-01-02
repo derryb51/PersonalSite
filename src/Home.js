@@ -20,8 +20,8 @@ class Home extends Component {
               <div id="image-holder"/>
               <div id="profile-photo"></div>
               <div id="name">Derry Bradley</div>
-              <div id="occupation">Software|Cloud Engineer</div> 
-              <li> <Link className="individual_item" to='/about'>About</Link></li>
+              <div id="occupation">Software Engineer</div> 
+             
             </div>);
           }
         }/>
