@@ -1,12 +1,165 @@
+
+
 .socialLinks{
-    position: fixed;
-    display: inline-flex;
+  position: relative;
+  display: -webkit-inline-flex;
+  left:2.5%;
+  top:30%;
+  list-style-type: none;
+  grid-gap:5%;
+ 
+}
+
+#socialmedicons{
+  display: flex;
+  align-items: center;
+}
+
+.my-links {
+  color: white;
+  text-decoration: none;
+  padding: 5rem 15rem;
+  background-color: #31649b;
+  border-radius: 5%;
+  transition: .4s;
+  font-size: 1000%;
+}
+
+#linkedin{
+  padding: 15% 17% 15% 15%;
+}
+
+
+
+/* END SINGLE CATEGORY PAGE
+/********** Large devices only **********/
+@media (min-width: 1200px){
+  .socialLinks{
+    position: relative;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    left:15%;
+    grid-gap:5%;
+   
+  }
+  
+  #socialmedicons{
+    padding:5%;
+  }
+  
+  .my-links {
+    color: white;
+    text-decoration: none;
+    padding: 15%;
+    background-color: #31649b;
+    border-radius: 3%;
+    transition: .4s;
+    font-size: 1000%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .socialLinks{
+    display: inline;
+    left:25%;
+    top:10%;
     list-style-type: none;
-    grid-gap:12%;
-    left:3%;
-    top:30%;
+  }
+  
+  #socialmedicons{
+    display:-moz-deck;
+    padding:5%;
+  }
+  
+  .my-links {
+    color: white;
+    text-decoration: none;
+    padding:15%;
+    background-color: #31649b;
+    border-radius: 5%;
+    transition: .4s;
+    font-size: 500%;
+  }
+  
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .socialLinks{
+    display: inline;
+    left:25%;
+    top:10%;
+    list-style-type: none;
+  }
+  
+  #socialmedicons{
+    display:-moz-deck;
+    padding:5%;
+  }
+  
+  .my-links {
+    color: white;
+    text-decoration: none;
+    padding:15%;
+    background-color: #31649b;
+    border-radius: 5%;
+    transition: .4s;
+    font-size: 500%;
+  }
 
 }
+
+/********** Extra small devices only **********/
+@media (min-width: 480px) and (max-width: 767px) {
+  .socialLinks{
+    display: inline;
+    left:25%;
+    top:10%;
+    list-style-type: none;
+  }
+  
+  #socialmedicons{
+    display:-moz-deck;
+    padding:5%;
+  }
+  
+  .my-links {
+    color: white;
+    text-decoration: none;
+    padding:15%;
+    background-color: #31649b;
+    border-radius: 5%;
+    transition: .4s;
+    font-size: 500%;
+  }
+}
+
+/********* SUPER EXTRA SMALL DEVICES ONLY ******/
+@media (min-width: 0px) and (max-width: 479px){
+  .socialLinks{
+    display: inline;
+    left:25%;
+    top:10%;
+    list-style-type: none;
+  }
+  
+  #socialmedicons{
+    display:-moz-deck;
+    padding:5%;
+  }
+  
+  .my-links {
+    color: white;
+    text-decoration: none;
+    padding:15%;
+    background-color: #31649b;
+    border-radius: 5%;
+    transition: .4s;
+    font-size: 500%;
+  }
+} 
 
 
   /* grid-gap: 8%;

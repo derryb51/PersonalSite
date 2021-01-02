@@ -5,6 +5,9 @@ import Dropdown from './Navbar.js'
 import Navbar from './Navbar.js';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
+import initFontAwesome from "./initFontAwesome"; 
+
+initFontAwesome();
 
 class App extends Component {
   render() {
