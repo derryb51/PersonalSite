@@ -1,65 +1,37 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
+
 .aboutMe{
-    position: relative;
-    right: 5%;
-    width:40%;
+    margin: auto;
+    width: 55vmin;
+    height: 60vmin;
     color: rgb(196, 164, 164);
-    font-size:175%;
-    margin-left: 50%;
     margin-top: 5%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:rgb(26, 37, 73);
-    padding: 2%;
+    padding: 1%;
     border-radius: 5%;
-}
-
-
-
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-    .aboutMe{
-        position: relative;
-        right:15%;
-        width:50%;
-        font-size:120%;
-        
-    }
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  
-    .aboutMe{
-        position: relative;
-        right:25%;
-        width:65%;
-        font-size:120%;
-        
-    }
-}
-
-/********** Extra small devices only **********/
-@media (min-width: 480px) and (max-width: 767px) {
-    .aboutMe{
-        position: relative;
-        right:25%;
-        width:65%;
-        font-size:100%;
-        
-    }
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.7vh;
 }
 
 /********* SUPER EXTRA SMALL DEVICES ONLY ******/
-@media (min-width: 0px) and (max-width: 479px){
-
+@media (min-width: 0px) and (max-width: 560px){
     .aboutMe{
-        position: relative;
-        right:25%;
-        width:65%;
-        font-size:80%;
-        
-    }
-}
+        margin: auto;
+        width: 70%;
+        height: 1%;
+        color: rgb(196, 164, 164);
+        margin-top: 5%;
+        background-color:rgb(26, 37, 73);
+        padding: 3%;
+        border-radius: 5%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.7vh;
+    }    
+  }
+
 
 
 

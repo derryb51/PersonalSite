@@ -16,23 +16,22 @@ class Contact extends Component {
         return (
            <div className="app">
              
-            <ul className="socialLinks">
-                <li id="socialmedicons">
+            
                     <a href="mailto: derrybradley199611@gmail.com" className='my-links'><FontAwesomeIcon icon="envelope"title="Email"  /></a>
-                </li>
+              
                 
-                <li id="socialmedicons">
+                
                     <a href="https://www.linkedin.com/in/derrybradley203/" className='my-links' id="linkedin"><FontAwesomeIcon icon={['fab', 'linkedin']} title="LinkedIn"/></a>
-                </li>
+                
         
-                <li id="socialmedicons">
-                    <a href="https://github.com/derryb51" className='my-links'> <FontAwesomeIcon icon={['fab', 'github']} title="Github"/></a>
-                </li>
+                
+                    <a href="https://github.com/derryb51" className='my-links'><FontAwesomeIcon icon={['fab', 'github']} title="Github"/></a>
+                
 
-                <li id="socialmedicons">
+               
                     <a href="https://gitlab.com/derryb51" className='my-links'><FontAwesomeIcon icon={['fab', 'gitlab']} title="Gitlab" /></a>
-                </li>
-            </ul>
+               
+        
          
            </div>
            

@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Home.js';
 import Dropdown from './Navbar.js'
 import Navbar from './Navbar.js';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, Link, Switch} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import initFontAwesome from "./initFontAwesome"; 
 
@@ -13,29 +13,19 @@ class App extends Component {
   render() {
     return (
 
-      <Router>
+      
             <div className="app">
-            <Navbar></Navbar>
-              <Route path="/" exact strict render={
-          () => {
-            return (
-            <div className="homePage">
-            
-             <Home></Home>
               
-              
-
-         
-              
-           
-
-            </div>);
-          }
-        }/>
-        
+              <HashRouter basename={process.env.PUBLIC_URL}>
+                <Navbar></Navbar>
+                <Switch>
+                <Route exact path="/" render={props => <Home />} />
+    
+                </Switch>
+              </HashRouter>
             </div>
-        
-      </Router>
+
+      
 
     );
   }
