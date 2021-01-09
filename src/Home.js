@@ -11,26 +11,24 @@ class Home extends Component {
   
   render() {
     return (
-      <Router>
+      
             <div className="app">
-              <Route path="/" exact strict render={
-          () => {
-            return (
+              
+          
             <div className="homePage">
-              <div id="image-holder"/>
+            
               <div id="profile-photo"></div>
+              
               <div id="name">Derry Bradley</div>
               <div id="occupation">Software Engineer</div> 
              
-            </div>);
-          }
-        }/>
-        <Route path ="/about" exact strict component={About}/>
+            </div>
+          
         
         
             </div>
         
-      </Router>
+     
         
   
     );

@@ -15,7 +15,8 @@ class Experience extends Component {
       isClickedThree:false,
       isClickedFour:false,
       isClickedFive:false,
-      isClickedSix:false
+      isClickedSix:false,
+      isClickedSeven:false,
     };
   }
 
@@ -38,6 +39,9 @@ class Experience extends Component {
 
     if(id=="psix")
     this.setState(this.toggleClickStateSix);
+
+    if(id=="pseven")
+    this.setState(this.toggleClickStateSeven);
   }
   
   toggleClickState(state) {
@@ -75,6 +79,11 @@ class Experience extends Component {
       isClickedSix: !state.isClickedSix,
     };
   }
+  toggleClickStateSeven(state) {
+    return {
+      isClickedSeven: !state.isClickedSeven,
+    };
+  }
 
  
 
@@ -82,19 +91,16 @@ class Experience extends Component {
 
         return (
            <div className="app">
-
-             
-
-            <ul className="mylist">
-            <li className="bubbles" id="pone"
-            onClick={this.handleClick}
-            onMouseLeave={this.museLeave}>
-            <p id="textOne">Software Engineer <br/><br/>Fidelity Investments<br/><br/> August 2020 - Present</p>
-            </li>
-                                {
+              <div className="gallery">
+                <div className="bubbles" id="pone"
+                  onClick={this.handleClick}
+                  onMouseLeave={this.museLeave}>
+                  <p id="textOne">Software Engineer <br/><br/>Fidelity Investments<br/><br/> August 2020 - Present</p>
+                </div>
+                              {
                                   this.state.isClicked && 
                                   <div id="myList"> 
-                                  I am currently participating in Fidelity Investments Leap Software Engineering Track.
+                                 I am currently participating in Fidelity Investments Leap Software Engineering Track.
                                   <br/>Training in this track includes: 
                                   <ul>
                                       <li id="item">Object Oriented Analysis and Design</li>
@@ -115,15 +121,16 @@ class Experience extends Component {
                                   </ul>
 
                                   <b>TAP AGAIN TO CLOSE</b>
-                              </div>
+                                  </div>
                              
                               }
+                
+                <div className="bubbles" id="ptwo"
+                    onClick={this.handleClick}>
+                  <p id="textOne">Technical Operations<br/><br/>Sentenial <br/><br/>January 2020 – August 2020</p>
+                </div>
 
-            <li className="bubbles" id="ptwo"
-            onClick={this.handleClick}>
-            <p id="textOne">Technical Operations<br/><br/>Sentenial <br/><br/>January 2020 – August 2020</p>
-            </li>
-                      {
+                        {
                           this.state.isClickedTwo &&
                           <div id="myList"> 
                               <ul>
@@ -143,11 +150,11 @@ class Experience extends Component {
                               <b>TAP AGAIN TO CLOSE</b>    
                           </div>
                           }
-    
-            <li className="bubbles" id="pthree"
-             onClick={this.handleClick}>
-            <p id="textOne">Construction Laborer/Machine Operator<br/><br/>Bennett Mechanical Installations (2001) Ltd<br/><br/> May 2018 – August 2019</p>
-            </li>
+                
+                <div className="bubbles" id="pthree"
+                    onClick={this.handleClick}>
+                  <p id="textOne">Construction Laborer/Machine Operator<br/><br/>Bennett Mechanical Installations (2001) Ltd<br/><br/> May 2018 – August 2019</p>
+                </div>
 
                         {
                           this.state.isClickedThree &&
@@ -157,12 +164,12 @@ class Experience extends Component {
                               </ul> 
                               <b>TAP AGAIN TO CLOSE</b>     
                           </div>
-                          }
-
-            <li className="bubbles" id="pfour"
-            onClick={this.handleClick}>
-            <p id="textOne">Urban Planning Internship<br/><br/>Tom Phillips & Associates<br/><br/> May 2016 – August 2016</p>
-            </li>
+                        }
+                
+                <div className="bubbles" id="pfour"
+                    onClick={this.handleClick}>
+                  <p id="textOne">Urban Planning Internship<br/><br/>Tom Phillips & Associates<br/><br/> May 2016 – August 2016</p>
+                </div>
 
                         {
                           this.state.isClickedFour &&
@@ -173,12 +180,12 @@ class Experience extends Component {
                               </ul>   
                               <b>TAP AGAIN TO CLOSE</b>   
                           </div>
-                          }
-
-            <li className="bubbles" id="pfive"
-             onClick={this.handleClick}>
-            <p id="textOne">Internship - Software Testing<br/><br/>Sentenial<br/><br/> June 2015 – August 2015</p>
-            </li>
+                        }
+                
+                <div className="bubbles" id="pfive"
+                    onClick={this.handleClick}>
+                  <p id="textOne">Internship - Software Testing<br/><br/>Sentenial<br/><br/> June 2015 – August 2015</p>
+                </div>
 
                         {
                           this.state.isClickedFive &&
@@ -189,22 +196,41 @@ class Experience extends Component {
                               <b>TAP AGAIN TO CLOSE</b>    
                           </div>
                         }
+                
+                <div className="bubbles" id="psix"
+                  onClick={this.handleClick}>
+                  <p id="textOne">Sales Representative<br/><br/>Astra Marketing <br/><br/> Jan 2015 – May 2015</p>
+                </div>
 
-            <li className="bubbles" id="psix"
-            onClick={this.handleClick}>
-            <p id="textOne">Sales Representative<br/><br/>Astra Marketing <br/><br/> Jan 2015 – May 2015</p>
-            </li>
-            {
+                        {
                           this.state.isClickedSix &&
                           <div id="myList"> 
                               <ul>
                                   <li id="item">Proactively sought new business opportunities in existing and potential business accounts </li>
                                   <li id="item">Maintained and grew the market share within a specific sales territory </li>
                               </ul> 
+                              <b id="close">TAP AGAIN TO CLOSE</b>     
+                          </div>
+                        }
+                
+                <div className="bubblestwo">
+                  <p id="textTwo">Click On A Bubble</p>
+                </div>
+                
+                <div className="bubblestwo" id="pseven" onClick={this.handleClick}>
+                  <p id="textTwo">Licenses</p>
+                </div>
+                        {
+                          this.state.isClickedSeven &&
+                          <div id="myList"> 
+                              <ul>
+                                  <li id="item">Oracle Certified Associate, Java SE 8 Programmer</li>
+                                  <li id="item">AWS Certified Cloud Practitioner</li>
+                              </ul> 
                               <b>TAP AGAIN TO CLOSE</b>     
                           </div>
                         }
-            </ul>
+              </div>
            </div>
         );
     }

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import About from './About.js';
+import Home from './Home.js';
 import Experience from './Experience.js';
 import Contact from './Contact.js';
 import Route from 'react-router-dom/Route';
@@ -41,11 +42,11 @@ function Navbar() {
 
 
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>IRE <div className="imglogo"></div></Link>
+        <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>IRE <div className="imglogo"></div></Link>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           
           <li className='nav-item' id="mainls">
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
+            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>Home</Link>
           </li>
           
           <li className='nav-item' id="mainls">
@@ -61,32 +62,10 @@ function Navbar() {
             <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact Me</Link>
           </li>
 
-          {/* <li className='nav-item' id="dropdownls" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            <Link className='nav-links' onClick={closeMobileMenu}>Dropdown</Link>
-            {dropdown && <Dropdown />}
-          </li> */}
-
-          {/* <li className='nav-item' onClick={handleClick} 
-          className={'dropdown-menu'}
-          >
-           
-            {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-           
-          </li> */}
+         
         </ul> 
       </nav>
+      <Route path ="/home" exact strict component={Home}/>
       <Route path ="/about" exact strict component={About}/>
       
       <Route path ="/experience" exact strict component={Experience}/>

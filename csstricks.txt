@@ -1,0 +1,1 @@
+https://css-tricks.com/centering-a-div-that-maintains-aspect-ratio-when-theres-body-margin/

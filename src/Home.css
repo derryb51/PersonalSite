@@ -1,10 +1,14 @@
+body {
+  align-items: center;
+  justify-content: center;
+}
+
 #profile-photo{
-  position: relative;
-  left:38%;
-  margin-top: 15%;  
+  margin: auto;
   background-image: url("./assets/Me_Two.jpg");
-  height: 35vh;
-  width:35vh;
+  width: 50vmin;
+  height: 50vmin;
+  margin-top: 5%;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,15 +28,10 @@
   #name, #occupation{
     color: whitesmoke;
     opacity: .9;
-    font-size: 7em;
-    position: relative;
-    right:3%;
-    overflow:auto;
+    font-size:7vw ; 
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: -2px;
     border-bottom: 2px solid black;
-    width:100%;
     text-transform: uppercase;
     
   }
@@ -41,56 +40,21 @@
   color:gold
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  #profile-photo{
-      position: relative;
-      left:36%;
-      margin-top: 15%;  
+  /********* SUPER EXTRA SMALL DEVICES ONLY ******/
+  @media (min-width: 0px) and (max-width: 700px){
+    #profile-photo{
+     margin-top: 35%;  
     }
-  
-  #name, #occupation{
-     font-size: 5em; 
-    }
-}
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  #profile-photo{
-      position: relative;
-      left:32%;
-      margin-top: 15%;  
+    #name, #occupation{
+      font-size:9vw ;  
+      opacity: 1;
     }
-  
-  #name, #occupation{
-     font-size: 4em; 
-    }
-  
-}
 
-/********** Extra small devices only **********/
-@media (min-width: 480px) and (max-width: 767px) {
-  #profile-photo{
-    position: relative;
-    left:25%;
-    margin-top: 35%;  
+    #occupation{
+      filter: brightness(150%);
+    }
+
+    
   }
 
-#name, #occupation{
-   font-size: 3em; 
-  }
-}
-
-/********* SUPER EXTRA SMALL DEVICES ONLY ******/
-@media (min-width: 0px) and (max-width: 479px){
-  #profile-photo{
-    position: relative;
-    left:20%;
-    margin-top: 35%;  
-  }
-
-#name, #occupation{
-   font-size: 3em; 
-  }
-  
-}
